@@ -1,1 +1,78 @@
+@font-face {
+    font-family: "Fraunces";
+    src: url('./assets/fonts/Fraunces/static/Fraunces_72pt-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('./assets/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('./assets/fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+}
+
 @import "tailwindcss";
+
+@theme {
+    --color-black: #1C232B;
+    --color-grey: #6C7289;
+    --color-cream: #F2EAE2;
+    --color-green-500: #3D8168;
+    --color-green-700: #1A4032;
+
+    --spacing-50: 4px;
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+
+    --font-fraunces: "Fraunces", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+}
+
+@layer base {
+    body {
+        @apply bg-cream;
+    }
+}
+
+@layer components {
+
+    .text_preset_1 {
+        @apply text-[32px] font-fraunces leading-[100%] tracking-[0px];
+    }
+
+    .text_preset_2,
+    .text_preset_3,
+    .text_preset_4,
+    .text_preset_5 {
+        @apply font-montserrat tracking-[0px] text-[14px] font-medium leading-[120%];
+    }
+
+    .text_preset_2 {
+        @apply leading-[110%] font-bold;
+    }
+
+    .text_preset_3 {
+        @apply leading-[160%];
+    }
+
+    .text_preset_4 {
+        @apply text-[12px] tracking-[5px];
+    }
+
+    .text_preset_5 {
+        @apply text-[13px];
+    }
+
+
+}
