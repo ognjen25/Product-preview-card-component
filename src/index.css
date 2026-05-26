@@ -28,12 +28,12 @@
     --color-green-500: #3D8168;
     --color-green-700: #1A4032;
 
-    --spacing-50: 4px;
+    /* --spacing-50: 4px;
     --spacing-100: 8px;
     --spacing-200: 16px;
     --spacing-300: 24px;
     --spacing-400: 32px;
-    --spacing-500: 40px;
+    --spacing-500: 40px; */
 
     --font-fraunces: "Fraunces", sans-serif;
     --font-montserrat: "Montserrat", sans-serif;
@@ -41,7 +41,7 @@
 
 @layer base {
     body {
-        @apply bg-cream;
+        @apply bg-cream flex justify-center items-center content-center;
     }
 }
 
