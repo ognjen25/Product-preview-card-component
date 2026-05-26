@@ -1,6 +1,6 @@
 import ProducPicMB from "./assets/images/image-product-mobile.jpg"
 import ProducPicDT from "./assets/images/image-product-desktop.jpg"
-import { useWindowSize } from "./hooks/useWindowSize";
+import { useWindowSize } from "./Hooks/useWindowSize";
 import Button from "./components/Button"
 
 const App = () => {
