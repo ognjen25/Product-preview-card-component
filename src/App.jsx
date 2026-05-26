@@ -8,11 +8,11 @@ const App = () => {
     const isDesktop = useWindowSize();
 
     return (
-        <div className="my-[30px] bg-white max-w-[350px] min-h-[750px] md:max-w-[600px] md:min-h-[450px] flex flex-col md:flex-row">
+        <div className="bg-white max-w-[350px] min-h-[750px] md:max-w-[600px] md:min-h-[450px] flex flex-col md:flex-row rounded-[8px]">
             <img
                 src={isDesktop ? ProducPicDT : ProducPicMB}
                 alt="Gabrielle Essence Perfume"
-                className="w-full h-[342px] md:h-full md:w-[300px]"
+                className="w-full h-[342px] md:h-full md:w-[300px] rounded-t-[8px]  md:rounded-r-[0px] md:rounded-l-[8px]"
             />
             <section className="p-[32px] h-full flex flex-col gap-[24px]">
                 <div className="flex flex-col gap-[24px]">

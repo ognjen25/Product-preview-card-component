@@ -40,8 +40,13 @@
 }
 
 @layer base {
+
+    html{
+        @apply h-full;
+    }
+
     body {
-        @apply bg-cream flex justify-center items-center content-center;
+        @apply h-full bg-cream flex flex-col justify-center items-center content-center;
     }
 }
 
